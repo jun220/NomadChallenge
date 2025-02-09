@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: #121212;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.weather {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  gap: 10px;
+}
+
+.quote-container {
+  position: absolute; /* 고정된 위치에 배치 */
+  top: 15%; /* 화면의 위에서 20% 떨어진 위치 */
+  left: 50%; /* 화면 중앙에 배치 */
+  transform: translateX(-50%); /* 수평으로 정확히 중앙 정렬 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  color: #fff; /* 텍스트 색상 (배경에 잘 보이게 흰색) */
+  font-family: "Arial", sans-serif; /* 폰트 설정 */
+}
+
+#quote {
+  font-size: 2rem; /* 명언 텍스트 크기 */
+  font-style: italic; /* 기울임꼴로 표시 */
+  margin-bottom: 10px; /* 아래쪽 마진 */
+}
+
+#author {
+  font-size: 1.2rem; /* 작게 설정된 명언의 출처 텍스트 크기 */
+  font-weight: bold; /* 강조를 위한 굵은 글씨 */
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  width: 350px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#greeting {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #cccccc;
+}
+
+.todo-container {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+#todo-input {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  background: #1e1e1e;
+  color: #ffffff;
+  border-radius: 5px;
+  outline: none;
+}
+
+#todo-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#todo-list li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#todo-list button {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#todo-list button:hover {
+  background: #cc0000;
+}
+
+.todo-count {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffffff;
+  color: #121212;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 50%;
+  min-width: 20px;
+  text-align: center;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#login-form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  background: #1e1e1e;
+  color: #ffffff;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+}
+
+#login-form button {
+  background: #ffffff;
+  color: #121212;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#login-form button:hover {
+  background: #cccccc;
+}
+
+.hidden {
+  /* flex와 무관하게 사라질 수 있도록 important 설정 */
+  display: none !important;
+}
+
+#background-image {
+  position: absolute; /* 화면의 전체 영역을 덮도록 위치 지정 */
+  top: 0; /* 화면의 상단에 맞추기 */
+  left: 0; /* 화면의 좌측에 맞추기 */
+  width: 100vw; /* 화면의 가로 크기 전체 */
+  height: 100vh; /* 화면의 세로 크기 전체 */
+  object-fit: cover; /* 이미지가 화면 크기에 맞게 잘라짐 */
+  z-index: -1; /* 다른 요소들보다 뒤에 오도록 설정 */
+}

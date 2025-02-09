@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img id="background-image" />
+
+    <div class="weather">
+      <span id="city">Seoul</span>
+      <span id="temperature">15°C</span>
+      <span id="weather-condition">Clear</span>
+    </div>
+
+    <div class="quote-container">
+      <blockquote id="quote"></blockquote>
+      <cite id="author"></cite>
+    </div>
+
+    <div class="container">
+      <h1 id="clock">00:00:00</h1>
+      <form id="login-form" class="hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="what is your name?"
+        />
+        <button>Login</button>
+      </form>
+      <p id="greeting" class="hidden">
+        Hello, <span id="username">user</span>!
+      </p>
+
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          required
+          maxlength="10"
+          placeholder="Enter your todo..."
+        />
+      </form>
+    </div>
+    <div class="todo-container">
+      <span id="todo-count" class="todo-count">0</span>
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script src="js/quote.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
