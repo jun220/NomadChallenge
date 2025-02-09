@@ -50,7 +50,7 @@ const quote = document.querySelector(".quote-container #quote");
 const author = document.querySelector(".quote-container #author");
 
 const length = quotes.length;
-let index = Math.round(Math.random() * length);
+let index = Math.floor(Math.random() * length);
 
 quote.innerHTML = quotes[index].quote;
 author.innerHTML = "- " + quotes[index].author;
